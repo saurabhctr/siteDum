@@ -1,60 +1,74 @@
-/* Add this at the end of styles.css file */
-
-body.border-animation::before,
-body.border-animation::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #ffcc00;
-    z-index: 999;
-    transition: transform 1s ease;
-}
-
-body.border-animation::before {
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom left;
-}
-
-body.border-animation::after {
-    right: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-
-body.border-animation::before {
-    transition-delay: 1s;
-}
-
-body.border-animation::after {
-    transition-delay: 2s;
-}
+/* Add your global styles here */
 
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-section {
-    padding: 2em;
-    position: relative;
-    overflow: hidden;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.home-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.parallax-section {
+    color: #fff;
+    text-align: center;
 }
 
 .parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 400px;
 }
 
-.parallax-bg img {
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.scroll-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.scroll-btn:hover {
+    background-color: #555;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
     width: 100%;
-    height: auto;
+    max-width: 300px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
