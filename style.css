@@ -1,0 +1,60 @@
+/* Add this at the end of styles.css file */
+
+body.border-animation::before,
+body.border-animation::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #ffcc00;
+    z-index: 999;
+    transition: transform 1s ease;
+}
+
+body.border-animation::before {
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+body.border-animation::after {
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+body.border-animation::before {
+    transition-delay: 1s;
+}
+
+body.border-animation::after {
+    transition-delay: 2s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.parallax-bg img {
+    width: 100%;
+    height: auto;
+}
