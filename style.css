@@ -1,112 +1,241 @@
-/* Add your global styles here */
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.homepage {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+.homepage .div {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 2092px;
+  position: relative;
 }
 
-.home-section {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
+.homepage .we-re-farmers {
+  position: absolute;
+  width: 1020px;
+  top: 278px;
+  left: 217px;
+  font-family: "Newsreader", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: -1.28px;
+  line-height: 76.8px;
 }
 
-.parallax-section {
-    color: #fff;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+.homepage .text-wrapper {
+  font-family: "Newsreader", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: -1.28px;
+  line-height: 76.8px;
 }
 
-.parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: transform 0.3s ease;
+.homepage .span {
+  font-style: italic;
 }
 
-.parallax-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.homepage .button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 227px;
+  height: 64px;
+  top: 481px;
+  left: 607px;
+  background-color: #426b1f;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.parallax-section:hover .parallax-bg {
-    transform: scale(1.2);
+.homepage .text-wrapper-2 {
+  position: absolute;
+  height: 26px;
+  top: 18px;
+  left: 32px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  white-space: nowrap;
 }
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.homepage .we-believe-in {
+  position: absolute;
+  width: 822px;
+  top: 1549px;
+  left: 309px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 32px;
 }
 
-.scroll-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.homepage .text-wrapper-3 {
+  position: absolute;
+  width: 181px;
+  top: 1554px;
+  left: 96px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 22.4px;
 }
 
-.scroll-btn:hover {
-    background-color: #555;
+.homepage .jonathan-kemper {
+  position: absolute;
+  width: 504px;
+  height: 693px;
+  top: 701px;
+  left: 96px;
+  object-fit: cover;
 }
 
-.services-section {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
+.homepage .central-california {
+  position: absolute;
+  width: 736px;
+  top: 1286px;
+  left: 660px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  line-height: 22.4px;
 }
 
-.services-item {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
+.homepage .text-wrapper-4 {
+  font-weight: 500;
 }
 
-.gallery-section {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
+.homepage .text-wrapper-5 {
+  font-weight: 300;
 }
 
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.homepage .header {
+  position: absolute;
+  width: 1440px;
+  height: 112px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
 }
 
-.image-gallery img {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    transition: transform 0.3s ease;
+.homepage .text-wrapper-6 {
+  position: absolute;
+  top: 40px;
+  left: 96px;
+  font-family: "Newsreader", Helvetica;
+  font-weight: 500;
+  color: #426b1f;
+  font-size: 32px;
+  letter-spacing: -0.32px;
+  line-height: 32px;
+  white-space: nowrap;
 }
 
-.image-gallery img:hover {
-    transform: scale(1.2);
+.homepage .text-wrapper-7 {
+  position: absolute;
+  height: 21px;
+  top: 44px;
+  left: 744px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+.homepage .text-wrapper-8 {
+  position: absolute;
+  height: 21px;
+  top: 44px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.homepage .text-wrapper-9 {
+  position: absolute;
+  height: 21px;
+  top: 44px;
+  left: 956px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.homepage .text-wrapper-10 {
+  position: absolute;
+  height: 21px;
+  top: 44px;
+  left: 1094px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.homepage .cart-button {
+  position: absolute;
+  width: 126px;
+  height: 48px;
+  top: 32px;
+  left: 1218px;
+  background-color: #426b1f;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.homepage .text-wrapper-11 {
+  position: absolute;
+  height: 21px;
+  top: 12px;
+  left: 23px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.homepage .stocksy {
+  position: absolute;
+  width: 780px;
+  height: 480px;
+  top: 791px;
+  left: 660px;
+  object-fit: cover;
 }
