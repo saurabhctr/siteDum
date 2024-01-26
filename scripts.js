@@ -29,3 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('border-animation');
     }, 9000);
 });
+
+async function callApi(method, input) {
+    try {
+      const response = await fetch(`/api/${method}?input=${encodeURIComponent(input)}`);
+      const data = await response.json();
+      displayApiResponse(JSON.stringify(data, null, 2));
+    } catch (error) {
+      console.error('API call failed:', error);
+    }
+  }
+  
+  function displayApiResponse(response) {
+    document.getElementById('api-response').innerText = response;
+  }

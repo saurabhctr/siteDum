@@ -238,4 +238,26 @@
   top: 791px;
   left: 660px;
   object-fit: cover;
+
+  .api-buttons {
+    margin-top: 20px;
+  }
+  
+  .api-buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #426b1f;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .api-response {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+  }
 }
