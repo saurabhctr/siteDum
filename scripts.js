@@ -32,14 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 async function callApi(method, input) {
     try {
-      const response = await fetch(`/api/${method}?input=${encodeURIComponent(input)}`);
-      const data = await response.json();
-      displayApiResponse(JSON.stringify(data, null, 2));
+        // Replace 'your-flask-server-url' with the actual domain or IP address
+        const response = await fetch(`http://http://3.106.197.47:5000/api/${method}?input=${encodeURIComponent(input)}`);
+        const data = await response.json();
+        displayApiResponse(JSON.stringify(data, null, 2));
     } catch (error) {
-      console.error('API call failed:', error);
+        console.error('API call failed:', error);
     }
-  }
-  
-  function displayApiResponse(response) {
+}
+
+function displayApiResponse(response) {
     document.getElementById('api-response').innerText = response;
-  }
+}
