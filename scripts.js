@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 async function callApi(method, input) {
     try {
         // Replace 'your-flask-server-url' with the actual domain or IP address
-        const response = await fetch(`http://54.66.13.167:5000/api/${method}?input=${encodeURIComponent(input)}`);
+        const response = await fetch(`http://0.0.0.0:5000/api/${method}?input=${encodeURIComponent(input)}`);
         const data = await response.json();
         displayApiResponse(JSON.stringify(data, null, 2));
     } catch (error) {
