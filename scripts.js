@@ -32,8 +32,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 async function callApi(method, input) {
     try {
-        // Replace 'your-flask-server-url' with the actual domain or IP address
-        const response = await fetch(`http://0.0.0.0:5000/api/${method}?input=${encodeURIComponent(input)}`);
+        const url = `http://0.0.0.0:5000/api/${method}`;
+        const headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic MTIzNA==' // Replace with your actual API key
+        };
+
+        const options = {
+            method: method,
+            headers: headers,
+            body: JSON.stringify(input)
+        };
+
+        const response = await fetch(url, options);
         const data = await response.json();
         displayApiResponse(JSON.stringify(data, null, 2));
     } catch (error) {

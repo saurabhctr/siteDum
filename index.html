@@ -52,14 +52,15 @@
         <img class="stocksy" src="img/stocksy-txp226f62b2ane300-medium-4582193-1.png" />
       </div>
     </div>
-    <div class="api-buttons">
-      <button onclick="callApi('square', 5)">Square (5)</button>
-      <button onclick="callApi('square', 'abc')">Square ('abc')</button>
-      <button onclick="callApi('reverse', { 'key1': 'value1', 'key2': 'value2' })">Reverse</button>
-      <button onclick="callApi('reverse', 'invalid input')">Reverse (Invalid Input)</button>
-    </div>
+   <!-- Add these buttons to your HTML -->
+<div class="api-buttons">
+  <button onclick="callApi('GET', '')">Test GET Request</button>
+  <button onclick="callApi('POST', { 'key1': 'value1', 'key2': 'value2' })">Test POST Request</button>
+  <button onclick="callApi('PUT', { 'key1': 'updated_value1', 'key2': 'updated_value2' })">Test PUT Request</button>
+  <button onclick="callApi('DELETE', 'resource_id')">Test DELETE Request</button>
+</div>
 
-    <!-- Display API response -->
-    <div class="api-response" id="api-response"></div>
+<!-- Display API response -->
+<div class="api-response" id="api-response"></div>
   </body>
 </html>
