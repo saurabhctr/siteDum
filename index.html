@@ -16,15 +16,6 @@
             well-compensated.</span
           >
         </p>
-        <div class="api-buttons">
-          <button onclick="callApi('square', 5)">Square (5)</button>
-          <button onclick="callApi('square', 'abc')">Square ('abc')</button>
-          <button onclick="callApi('reverse', { 'key1': 'value1', 'key2': 'value2' })">Reverse</button>
-          <button onclick="callApi('reverse', 'invalid input')">Reverse (Invalid Input)</button>
-        </div>
-  
-        <!-- Display API response -->
-        <div class="api-response" id="api-response"></div>
     <div class="homepage">
       <div class="div">
         <p class="we-re-farmers">
@@ -61,5 +52,14 @@
         <img class="stocksy" src="img/stocksy-txp226f62b2ane300-medium-4582193-1.png" />
       </div>
     </div>
+    <div class="api-buttons">
+      <button onclick="callApi('square', 5)">Square (5)</button>
+      <button onclick="callApi('square', 'abc')">Square ('abc')</button>
+      <button onclick="callApi('reverse', { 'key1': 'value1', 'key2': 'value2' })">Reverse</button>
+      <button onclick="callApi('reverse', 'invalid input')">Reverse (Invalid Input)</button>
+    </div>
+
+    <!-- Display API response -->
+    <div class="api-response" id="api-response"></div>
   </body>
 </html>
